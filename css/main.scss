@@ -1,0 +1,399 @@
+html {
+    overflow: auto;
+}
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    color: #707070;
+    overflow: hidden;
+    background-color: #97ffbb20;
+    
+    .title-box {
+        font-weight: 700;
+        .left-title {
+            div {
+                font-size: 10vw;
+                line-height: 16vw;
+                height: 16vw;
+                padding-top: 1vw;
+                padding-left: 5vw;
+                border-radius: 0 8vw 8vw 0;
+                color: white;
+            }
+            .title1 {
+                width: 75vw;
+                background-color: #8DCEA4;
+            }
+            .title2 {
+                width: 94vw;
+                background-color: #D0E562;
+            }
+        }
+        .airplane {
+            height: 20vw;
+            position: relative;
+            svg {
+                position: absolute;
+                right: 75vw;
+                margin-top: 5vw;
+                height: 10vw;
+            }
+            .line {
+                width: 70vw;
+                height: 2vw;
+                position: absolute;
+                top: 9.5vw;
+                right: 0;
+            }
+            .line::before {
+                content: "";
+                background-image: linear-gradient(to right, #707070, #707070 2vw, transparent 2vw, transparent 4vw);
+                background-size: 4vw 1.5vw;
+                background-repeat: repeat-x;
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+              }
+        }
+        .right-title {
+            div {
+                font-size: 12vw;
+                text-align: right;
+            }
+            .title3 {
+                padding-right: 5vw;
+            }
+            .title4 {
+                font-size: 13vw;
+                padding-right: 12vw;
+                background-color: #399051;
+                font-weight: 600;
+                width: 80vw;
+                margin-left: 20vw;
+                line-height: 22vw;
+                height: 20vw;
+                border-radius: 10vw 0 0 10vw;
+                color: white;
+                box-shadow: 2vw 2vw black;
+            }
+        }
+    }
+    .plan-box {
+        margin-top: 10vw;
+        position: relative;
+        height: 120vw;
+        .plan-title {
+            opacity: 0;
+            font-size: 12vw;
+            text-align: center;
+            font-weight: 700;
+            position: absolute;
+            width: 100vw;
+            top: 30vw;
+                }
+        .arrow {
+            position: absolute;
+            left: 49vw;
+            top: 40vw;
+            .point {
+                opacity: 0;
+                background-color: #ababab;
+                width: 3vw;
+                height: 3vw;
+                border-radius: 1.5vw;
+                margin: 4vw auto;
+            }
+            svg {
+                opacity: 0;
+                width: 7vw;
+                margin-top: 0;
+            }
+        }
+        img {
+            position: absolute;
+            box-sizing:content-box;
+            opacity: 0;
+        }
+        .image1 {
+            right: -5vw;
+            top: 1vw;
+            width: 30vw;
+            height: 30vw;
+            border-radius: 30vw;
+            object-fit: cover;
+            border: 3vw solid #bff2d956;
+        }
+        .image2 {
+            top: 37vw;
+            left: -5vw;
+            width: 36vw;
+            height: 36vw;
+            border-radius: 36vw;
+            object-fit: cover;
+            border: 3vw solid #d5df4296;
+        }
+        .image3 {
+            bottom: 0vw;
+            right: -5vw;
+            width: 44vw;
+            height: 44vw;
+            border-radius: 44vw;
+            object-fit: cover;
+            border: 3vw solid #cf61613f;
+        }
+    }
+    .plan {
+        margin-top: 10vw;
+        position: relative;
+        .space {
+            position: relative;
+            width: 100vw;
+            height: 300vw;
+            .kyushu_map {
+                position: absolute;
+                top: 21vw;
+                left: -5vw;
+                width: 110vw;
+                opacity: 0;
+            }
+            .contents {
+                div {
+                    position: absolute;
+                    opacity: 0;
+                }
+                .day {
+                    font-size: 14vw;
+                    font-weight: 700;
+                    top: 7vw;
+                    left: 100vw;
+                }
+                .date {
+                    font-size: 8vw;
+                    font-weight: 600;
+                    top: 12vw;
+                    right: 5vw;
+                }
+                .location-mark {
+                    width: 12vw;
+                    height: 12vw;
+                    background-color: rgba(255, 255, 255, 0.5);
+                    border-radius: 6vw;
+                    border: solid 2vw #5D8762;
+                }
+                .location {
+                    font-size: 9vw;
+                    font-weight: 700;
+                }
+                .caption {
+                    position:absolute;
+                    background-color: rgba(255, 255, 255, 0.65);
+                    width: 80vw;
+                    height: 100vw;
+                    left: 10vw;
+                    div {
+                        opacity: 1;
+                    }
+                    .triangle {
+                        top: -7vw;
+                        position: absolute;
+                        border-right: 5vw solid transparent;
+                        border-bottom: 7vw solid rgba(255, 255, 255, 0.65);
+                        border-left: 5vw solid transparent; 
+                    }
+                    .container {
+                        width: 100%;
+                        height: 100%;
+                        position: absolute;
+                        top: 0;
+                        .time {
+                            font-size: 10vw;
+                            font-weight: 600;
+                            top: 5vw;
+                            left: 5vw;
+                        }
+                        .text {
+                            font-size: 8vw;
+                            top: 15vw;
+                            left: 5vw;
+                        }
+                        img {
+                            position: absolute;
+                            bottom: 5vw;                        
+                            width: 65vw;
+                            left: 7.5vw;
+                            height: 65vw;
+                            object-fit: cover;
+                        }
+                    }
+                    .first {
+                        left: 0;
+                    }
+                    .second {
+                        opacity: 0;
+                        left: 100vw;
+                    }
+                    .third {
+                        left: 100vw;
+                    }
+                }
+            }
+            .fukuoka {
+                .location-mark {
+                    top: 31vw;
+                    left: 40vw;
+                }
+                .location {
+                    top: 45vw;
+                    left: 30vw;
+                }
+                .caption {
+                    top: 63vw;
+                    .triangle {
+                        left: 30vw;
+                    }
+                }
+            }
+            .kitakyushu {
+                .location {
+                    top: 36vw;
+                    left: 30vw;
+                }
+                .caption {
+                    top: 54vw;
+                    height: 110vw;
+                    .triangle {
+                        left: 30vw;
+                    }
+                }
+            }
+            .beppu {
+                .location {
+                    top: 40vw;
+                    right: 25vw;
+                }
+                .caption {
+                    top: 57vw;
+                    .triangle {
+                        right: 22vw;
+                    }
+                    .first {
+                        top: 0;
+                        left: 0;
+                    }
+                    .second {
+                        top: 0;
+                        left: 100vw;
+                    }
+                    .third {
+                        top: 0;
+                        left: 100vw;
+                    }
+                }
+            }
+            .yufuin {
+                .location {
+                    top: 43vw;
+                    left: 37vw
+                }
+                .caption {
+                    top: 60vw;
+                    height: 110vw;
+                    .triangle {
+                        left: 45vw;
+                    }
+                }
+            }
+            .aso {
+                .location {
+                    top: 57vw;
+                    left: 35vw;
+                }
+                .caption {
+                    top: 72vw;
+                    height: 100vw;
+                    .triangle {
+                        left: 28vw;
+                    }
+                    .container {
+                        img {
+                            height: 60vw;
+                        }
+                    }
+                    .first {
+                        top: 0;
+                        left: 0;
+                    }
+                    .second {
+                        top: 0;
+                        left: 100vw;
+                    }
+                    .third {
+                        top: 0;
+                        left: 100vw;
+                    }
+                }
+            }
+            .fukuoka2 {
+                .location-mark {
+                    top: 31vw;
+                    left: 40vw;
+                }
+                .location {
+                    top: 45vw;
+                    left: 30vw;
+                }
+                .caption {
+                    top: 63vw;
+                    .triangle {
+                        left: 30vw;
+                    }
+                }
+            }
+        }
+        .trigger {
+            width: 100%;
+            div {
+                .day {
+                    height: 40vw;
+                }
+                .date {
+                    height: 100vw;
+                }
+                .location-mark {
+                    height: 40vw;
+                }
+                .location {
+                    height: 100vw;
+                }
+                .caption {
+                    height: 200vw;
+                }
+                .inner-caption {
+                    height: 400vw;
+                }
+                .span {
+                    height: 100vw;
+                }
+            }
+            .end {
+                width: 100vw;
+                height: 500vw;
+            }
+        }
+    }
+    .new-page {
+        width: 100vw;
+        height: 200vw;
+        background-color: #8DCEA4;
+        margin-top: 0;
+    }
+    .new-page2 {
+        z-index: 100;
+        width: 100vw;
+        height: 200vw;
+        background-color: #8DCEA4;
+        margin-top: 0;
+    }
+
+}
